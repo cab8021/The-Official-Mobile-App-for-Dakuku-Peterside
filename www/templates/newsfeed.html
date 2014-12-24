@@ -1,0 +1,62 @@
+
+<ion-pane>
+<ion-view view-title="session"  hide-nav-bar="true">
+ <ion-content class="" header-shrink scroll-event-interval="5">
+  <div class="heading-container" style="height: 150px; border-bottom: 10px solid #ccc; overflow: hidden">
+    <div class="row">
+      <div class="col-75">
+          <h2 class=""><img class="title-image" ng-src="img/logo2x.png" /></h2>
+      </div>
+
+      <div class="col-25" style="text-align: center">
+        <h2>  <button class="button-light button-rounded" menu-toggle="left">
+          <i class="ion-navicon"></i>
+        </h2>
+      </div>
+
+    </div>
+    <div class="row" style="margin-top: 50px">
+
+      <div class="col" >
+        <h1>Newsfeed</h1>
+      </div>
+    </div>
+
+
+
+    <!-- <img ng-src="img/bg-crescent.png" class="bottom-cover"> -->
+
+    <div class="overlay cat-bio"></div>
+
+
+  </div>
+<!-- <ion-list>
+    <ion-item ng-repeat="post in posts"
+    ng-href="#/app/newsfeedPost/{{post.ID}}">
+    <img ng-src="{{post.featured_image.attachment_meta.sizes.thumbnail.url}}">
+      {{post.title}}
+      {{post.Id}}
+    </ion-item>
+  </ion-list> -->
+
+<div class="list list-inset">
+<div ng-repeat="post in posts">
+    <a class="item item-avatar dap-thumb" ng-href="#/app/newsfeedPost/{{post.ID}}">
+       <img ng-src="{{post.featured_image.attachment_meta.sizes.thumbnail.url}}">
+
+
+      <h2>{{ post.title }}</h2>
+      <p><span>{{post.date | date: fullDate }}</span> |<span> </span>{{post.terms.category[0].name}}</p>
+    </a>
+
+</div>
+
+
+   loading
+
+ </div>
+
+
+  </ion-content>
+</ion-view>
+</ion-pane> 

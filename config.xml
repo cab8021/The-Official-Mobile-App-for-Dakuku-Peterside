@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.ionicframework.conference445962" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>DAP</name>
+  <description>
+        The Official MobileApp fo Honourable Dakuku Adol Peterside
+    </description>
+  <author email="Irokowebnigeria@gmail.com" href="http://irokoweb.com/">
+      Irokoweb Nigeria
+    </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="BackupWebStorage" value="none"/>
+  
+  <platform name="android">
+              <icon src="icons/drawable-ldpi/ic_launcher.png" density="ldpi" />
+              <icon src="icons/drawable-mdpi/ic_launcher.png" density="mdpi" />
+              <icon src="icons/drawable-hdpi/ic_launcher.png" density="hdpi" />
+              <icon src="icons/drawable-xhdpi/ic_launcher.png" density="xhdpi" />
+
+              <icon src="icons/drawable-xxhdpi/ic_launcher.png" density="xhdpi" />
+
+              <icon src="icons/drawable-xhdpi/ic_launcher.png" density="xxxhdpi" />
+     </platform>
+  
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+  
+  
+</widget>

@@ -1,0 +1,49 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable bar-positive">
+      <ion-nav-back-button></ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-dark">
+      
+    </ion-header-bar>
+    <ion-content>
+      <ion-list class="navlist">
+        <ion-item nav-clear menu-close href="#/app/home item-icon-left">
+           <i class="icon ion-home"></i>
+          Home
+        </ion-item>
+
+        <ion-item nav-clear menu-close href="#/app/biography">
+        <i class="icon ion-university cat-bio"></i>
+          Biography
+        </ion-item>
+
+        <ion-item nav-clear menu-close href="#/app/awards">
+        <i class="icon ion-trophy cat-awa"></i>
+          Awards
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/multimedia">
+        <i class="icon ion-videocamera cat-mul"></i>
+          Multimedia
+        </ion-item>
+         <ion-item nav-clear menu-close href="#/app/education">
+         <i class="icon ion-star cat-edu"></i>
+          Education
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/political">
+        <i class="icon ion-person-add cat-pol"></i>
+          Political Affiliations
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
