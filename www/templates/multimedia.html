@@ -1,33 +1,57 @@
-<ion-view view-title="session"  hide-nav-bar="true">
-  <ion-content class="">
-  <div class="heading-container ">
-    <div class="row">
-      <div class="col-75">
-          <h2 class=""><img class="title-image" ng-src="img/logo2x.png" /></h2>
-      </div>
-
-      <div class="col-25" style="text-align: center">
-        <h2>  <button class="button-light button-rounded" menu-toggle="left">
-          <i class="ion-navicon"></i>
-        </h2>
-      </div>
-
-    </div>
-    <div class="row" style="margin-top: 50px">
-
-      <div class="col" >
-        <h1>Multimedia</h1>
-      </div>
-    </div>
+<ion-view view-title="Multimedia" class="has-header gallery-bg" >
 
 
 
-    <img src="/img/bg-crescent.png" class="bottom-cover">
+<ion-content class="padding" style="inset 0px 0 80px black;">
+<div class="row">
+  <div class="col padding gallery-thumb">
+    <a href="#/app/multimedia/personal" >
+      <img src="img/personal.png">
+    </a>
+    <p>Personal Pictures</p>
+  </div>
+  <div class="col padding gallery-thumb">
+    <a href="#/app/multimedia/sendforth" >
+      <img src="img/sendforth.png">
+    </a>
+    <p>Schorlarship Sendforth</p>
 
-    <div class="overlay cat-mul"></div>
+  </div>
+  <div class="col padding gallery-thumb">
+    <a href="#/app/multimedia/cransmontana" >
+      <img src="img/crans.png">
+    </a>
+
+    <p>CransMontana Forum</p>
 
 
   </div>
 
-  </ion-content>
+
+  <div class="col padding gallery-thumb">
+   <!--  <a href="#/app/multimedia/personal" >
+      <img src="img/personal.png">
+    </a>
+    <p>Bonny Visit</p> -->
+    
+  </div>
+
+
+</div>
+
+
+</ion-content>
+<p style="position: absolute;
+bottom: 20px;
+color: #fff;
+text-align: center;
+width: 250px;
+left: 50%;
+margin-left: -120px;">
+  <strong>Tap </strong>
+the Category thumbnail above <br>to view gallery of images 
+</p>
+
+
+
 </ion-view>

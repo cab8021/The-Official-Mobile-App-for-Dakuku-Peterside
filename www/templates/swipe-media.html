@@ -1,0 +1,29 @@
+
+<ion-pane>
+<ion-view view-title="Gallery" class="gallery-bg" >
+ <div class="has-footer"></div>
+  <ion-slide-box on-slide-changed="">
+  <ion-slide ng-repeat="slide in slides">
+    <div class="box slid">
+        <img ng-src="{{slide.url}}">
+    </div>
+  </ion-slide>
+  </ion-slide-box>
+
+
+<div class="has-footer"></div>
+
+<p style="position: absolute;
+bottom: 20px;
+color: #fff;
+text-align: center;
+width: 250px;
+left: 50%;
+margin-left: -120px;">
+  <strong>Swipe Left and Right</strong> <br>
+to view images
+</p>
+
+</ion-view>
+
+</ion-pane> 

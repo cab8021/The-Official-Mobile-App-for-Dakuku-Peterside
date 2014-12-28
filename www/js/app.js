@@ -68,12 +68,29 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
         templateUrl: "templates/multimedia.html"
       }
     }
+  }).state('app.mediagallery', {
+    url: "/multimedia/:ID",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/swipe-media.html",
+        controller: "youtubeList"
+      }
+    }
   })
   .state('app.education', {
     url: "/education",
     views: {
       'menuContent': {
-        templateUrl: "templates/education.html"
+        templateUrl: "templates/education.html",
+        controller: "EducationCtrl"
+      }
+    }
+  }).state('app.edudetail', {
+    url: "/edudetail",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/edu-details.html",
+        controller: "EducationCtrl"
       }
     }
   })
@@ -91,6 +108,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
       'menuContent': {
         templateUrl: "templates/newsfeed.html",
         controller: "newsfeedCtrl"
+
       }
     }
   })
