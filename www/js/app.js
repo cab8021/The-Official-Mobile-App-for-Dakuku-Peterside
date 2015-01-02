@@ -33,13 +33,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
     templateUrl: "templates/menu.html",
     controller: 'AppCtrl'
   })
-
     .state('app.home', {
       url: "/home",
       views: {
         'menuContent': {
           templateUrl: "templates/home.html",
           controller: 'SessionsCtrl'
+        }
+      }
+    })
+    .state('app.error', {
+      url: "/error",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/error.html"          
         }
       }
     })
@@ -73,7 +80,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
     views: {
       'menuContent': {
         templateUrl: "templates/swipe-media.html",
-        controller: "youtubeList"
+        controller: "multimediaList"
       }
     }
   })

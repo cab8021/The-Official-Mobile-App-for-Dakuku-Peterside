@@ -321,15 +321,30 @@ height: 80px;
 	p {
 	font-size: 10px;
 	color: #fff;
+	line-height: 10px;
 	}
 }
 
 .gallery-bg {
-	background: url("../img/2.png") no-repeat
+	background: url("../img/2.png") no-repeat center;
+	background-size: cover;
 }
 
 
 .item-complex .item-content, .item-radio .item-content{
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+
+
+.error-page {
+	color: #444 !important;
+
+}
+
+.error-over {
+	background: #fff !important;
+	opacity: .9 !important;
+
 }

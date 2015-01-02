@@ -7226,11 +7226,20 @@ p {
   border-radius: 12px; }
 .gallery-thumb p {
   font-size: 10px;
-  color: #fff; }
+  color: #fff;
+  line-height: 10px; }
 
 .gallery-bg {
-  background: url("../img/2.png") no-repeat; }
+  background: url("../img/2.png") no-repeat center;
+  background-size: cover; }
 
 .item-complex .item-content, .item-radio .item-content {
   padding-top: 10px;
   padding-bottom: 10px; }
+
+.error-page {
+  color: #444 !important; }
+
+.error-over {
+  background: #fff !important;
+  opacity: 0.9 !important; }

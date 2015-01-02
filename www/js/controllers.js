@@ -3,7 +3,7 @@ angular.module('starter.controllers', [
   'ionic.contrib.ui.cards'
   ])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+.controller('AppCtrl', function($scope, $ionicModal, $timeout, $location) {
   // Form data for the login modal
   $scope.loginData = {};
 
@@ -17,6 +17,11 @@ angular.module('starter.controllers', [
   // Triggered in the login modal to close it
   $scope.closeLogin = function() {
     $scope.modal.hide();
+  };
+
+   // Return home on success
+  $scope.returnTo = function(view) {
+    $location.path(view)
   };
 
   // Open the login modal
@@ -78,12 +83,21 @@ $http.get('http://dakukupeterside.com/wp-json/posts/').then(function (resp) {
 
   });
 
-}).controller('youtubeList', function($scope, $stateParams, $http, $ionicSlideBoxDelegate){
-      $http.get('/api/' + $stateParams.ID + '.json').then(function(resp){
+}).controller('multimediaList', function($scope, $stateParams, $http, $ionicSlideBoxDelegate, $ionicLoading, $location){
+  $ionicLoading.show({
+    template: "fetching inages"
+  });
+      $http.get('http://dakukupeterside.com/api/' + $stateParams.ID + '.json').then(function(resp){
+        $ionicLoading.hide();
         $scope.slides = resp.data;
         $ionicSlideBoxDelegate.update()
 
-      },function(err){ console.log(err)})
+      },function(err){ 
+        console.log(err);
+        $ionicLoading.hide();
+        $location.path('/app/error');
+
+      })
       
   })
 
