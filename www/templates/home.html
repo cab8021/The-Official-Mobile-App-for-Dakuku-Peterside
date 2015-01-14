@@ -21,6 +21,7 @@
       </a>
 
       <a class="edu" href="#/app/education">
+      <!-- <a class="edu" href="" ng-click="popover.show($event)"> -->
         <i class="icon ion-star"></i>
         Education
       </a>
@@ -34,14 +35,14 @@
         Newsfeed
       </a>
 
-      <a class="twi" onclick="window.plugins.socialsharing.shareViaTwitter('Find out about the Life and times of Dakuku Peterside', 'www/img/center-img.png' /* img */, 'http://www.dakukupeterside.com')">
+      <!-- <a class="twi" onclick="window.plugins.socialsharing.shareViaTwitter('Find out about the Life and times of Dakuku Peterside', 'www/img/center-img.png' /* img */, 'http://www.dakukupeterside.com')">
         <i class="icon ion-social-twitter"></i>
         Twitter
       </a>
       <a class="fac" onclick="window.plugins.socialsharing.shareViaFacebook('Findout about the Life and Times of Dakuku Adol Peterside', 'www/img/center-img.png'/* img */, 'http://www.dakukupeterside.com' /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">
         <i class="icon ion-social-facebook"></i>
         Facebook
-      </a>
+      </a> -->
     </div>
       </div>
       
@@ -52,9 +53,20 @@
   	</div>
     <p>
     	<strong>Tap </strong>
-      <!-- <button onclick="window.plugins.socialsharing.shareViaFacebookWithPasteMessageHint('Message via Facebook', null /* img */, null /* url */, 'Paste it dude!', function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">msg via Facebook (with errcallback)</button> -->
+    
        any of the icons above to navigate <br>
 to other sections of the App
     </p>
+
+
+    <script id="templates/popover.html" type="text/ng-template">
+      <ion-popover-view style="height: 70px; width: 200px; padding: 10px">
+        <ion-content scroll="false">
+          <a class="item" href="#/app/education" ng-click="popover.hide($event)">Education</a>
+        </ion-content>
+      </ion-popover-view>
+    </script>
+
+
   </ion-content>
 </ion-view>

@@ -7021,21 +7021,35 @@ a.button {
 p {
   color: #696969; }
 
+.header-intro {
+  margin-top: 100px;
+  background: #fff;
+  text-align: center; }
+  .header-intro img {
+    width: 100px;
+    margin-top: -50px; }
+  .header-intro h3 {
+    margin-top: 0;
+    font-weight: 300; }
+
 .heading-container {
   background: url("../img/pink-cont.png") no-repeat top;
   background-size: cover;
-  height: 400px;
-  padding: 20px 10px;
-  position: relative; }
+  height: 160px;
+  padding: 50px 10px;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  text-align: center; }
   .heading-container .overlay {
     opacity: 0.7;
     background: rgba(219, 0, 57, 0.76);
     width: 100%;
-    height: 400px;
+    height: 160px;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0; }
+    z-index: -1; }
   .heading-container .row {
     position: absolute;
     z-index: 1; }
@@ -7074,19 +7088,19 @@ p {
     margin: 150px auto 100px;
     position: relative; }
     .front-menu .center-img .bio {
-      top: -66px;
-      left: 80px; }
+      top: -60px;
+      left: 74px; }
     .front-menu .center-img .awa {
-      bottom: 70px;
+      bottom: 0px;
       right: -40px; }
     .front-menu .center-img .mul {
-      top: -20px;
-      left: -15px; }
+      top: -0px;
+      left: -40px; }
     .front-menu .center-img .edu {
-      right: -20px;
-      top: -20px; }
+      right: -40px;
+      top: 0px; }
     .front-menu .center-img .pol {
-      top: 70px;
+      bottom: -20px;
       left: -40px; }
     .front-menu .center-img .new {
       bottom: -68px;
@@ -7114,8 +7128,9 @@ p {
         border-radius: 20px; }
 
 .title-image {
-  width: 270px;
-  margin-top: 4px; }
+  width: 220px;
+  margin-top: 4px;
+  margin-left: 20px; }
 
 .navlist i {
   background: #ef473a;
@@ -7247,10 +7262,14 @@ p {
 .header-summary p {
   color: #fff; }
 .header-summary a {
-  color: #fcfcfc;
-  margin: 0 10px; }
+  color: #515151;
+  margin: 0;
+  display: inline-block;
+  background: white;
+  width: 44px;
+  height: 44px; }
   .header-summary a i {
-    font-size: 24px; }
+    font-size: 28px; }
 
 .share-module p {
   color: #444; }
