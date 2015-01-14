@@ -45,7 +45,7 @@ angular.module('starter.controllers', [
   // $scope.sessions = {Session.query()};
   $scope.sessions = {};
 })
-.controller('newsfeedCtrl', function($scope, Post, $ionicLoading, $http) {
+.controller('newsfeedCtrl', function($scope, Post, $ionicLoading, $http, $location) {
   
   $scope.show = function (){
     $ionicLoading.show({
@@ -66,7 +66,8 @@ $http.get('http://dakukupeterside.com/wp-json/posts/').then(function (resp) {
     $scope.posts = resp.data;
     $ionicLoading.hide();
   }, function(err){
-
+      $ionicLoading.hide();
+      $location.path('/app/error');
   });
 
 

@@ -7243,3 +7243,19 @@ p {
 .error-over {
   background: #fff !important;
   opacity: 0.9 !important; }
+
+.header-summary p {
+  color: #fff; }
+.header-summary a {
+  color: #fcfcfc;
+  margin: 0 10px; }
+  .header-summary a i {
+    font-size: 24px; }
+
+.share-module p {
+  color: #444; }
+.share-module a {
+  color: #444;
+  margin: 0 10px; }
+  .share-module a i {
+    font-size: 24px; }

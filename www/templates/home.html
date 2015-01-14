@@ -1,5 +1,5 @@
 <ion-view view-title="Home" hide-nav-bar="true" >
-  <ion-content scroll="false" class="front-menu" >
+  <ion-content class="front-menu" >
 
     <div class="row">
       <div class="col">
@@ -24,8 +24,6 @@
         <i class="icon ion-star"></i>
         Education
       </a>
-      <!-- <button onclick="window.plugins.socialsharing.share('Message and image', null, 'https://www.google.nl/images/srpr/logo4w.png', null)">message and image</button> -->
-
 
       <a class="pol" href="#/app/political">
         <i class="icon ion-person-add"></i>
@@ -36,20 +34,17 @@
         Newsfeed
       </a>
 
-      <a class="twi" onclick="window.plugins.socialsharing.shareViaTwitter('Find out about the Life and times of Dakuku Peterside', null /* img */, 'http://www.dakukupeterside.com')">
+      <a class="twi" onclick="window.plugins.socialsharing.shareViaTwitter('Find out about the Life and times of Dakuku Peterside', 'www/img/center-img.png' /* img */, 'http://www.dakukupeterside.com')">
         <i class="icon ion-social-twitter"></i>
         Twitter
       </a>
-      <a class="fac" onclick="window.plugins.socialsharing.shareViaFacebookWithPasteMessageHint('Find out about the Life and times of Dakuku Peterside --- http://www.dakukupeterside.com', null /* img */, null /* url */, 'Paste Message to share app!', function() { returnTo("/app/home")}, function(errormsg){alert(errormsg)})">
+      <a class="fac" onclick="window.plugins.socialsharing.shareViaFacebook('Findout about the Life and Times of Dakuku Adol Peterside', 'www/img/center-img.png'/* img */, 'http://www.dakukupeterside.com' /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">
         <i class="icon ion-social-facebook"></i>
         Facebook
       </a>
-
-
-
     </div>
       </div>
-
+      
 
   	
 
